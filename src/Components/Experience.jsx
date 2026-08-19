@@ -9,12 +9,16 @@ const experiences = [
     location: 'Remote, USA',
     current: false,
     bullets: [
-      'Built White-Label CRM with Twilio integration (calling, SMS, communication workflows)',
-      'Developed Wolf of Arches SaaS platform serving 50+ business users, reducing onboarding time by 40%',
-      'Architected Chair Track clinic system handling 500+ monthly appointments with automated scheduling',
-      'Implemented RBAC across 3 enterprise apps securing data for 200+ users with 99.9% uptime'
+      'Worked on development and customisation of web and software systems for real-world business use',
+      'Built and customised White-Label CRM with Twilio integration (calling, SMS, communication workflows)',
+      'Developed Wolf of Arches SaaS platform serving 50+ business users, reducing on boarding time by 40%',
+      'Architect Chair Track clinic system handling 500+ monthly appointments with automated scheduling',
+      'Implemented RBAC across 3 enterprise apps securing data for 200+ users with 99.9% up-time',
+      'Developed and maintained AceOfAesthetics web platform',
+      'Worked with React, Next.js, Tailwind CSS, APIs, and full-stack architecture',
+      'Collaborating with team on scalable and user-focused solutions'
     ],
-    stack: ['React.js', 'Next.js', 'Node.js', 'MongoDB', 'PostgreSQL', 'JWT', 'Vercel']
+    stack: ['React.js', 'Next.js', 'Node.js', 'MongoDB', 'PostgreSQL', 'JWT', 'Vercel', 'Twilio', 'Tailwind CSS', 'Express.js', 'REST APIs','SAS']
   },
   {
     company: 'Neplen (UAE)',
