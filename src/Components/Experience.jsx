@@ -1,4 +1,6 @@
+import { FaFilePdf } from 'react-icons/fa';
 import ScrollReveal from './ScrollReveal';
+import AitekExperienceLetter from '../assets/AitekExperienceLetter.pdf';
 
 const experiences = [
   {
@@ -18,7 +20,9 @@ const experiences = [
       'Worked with React, Next.js, Tailwind CSS, APIs, and full-stack architecture',
       'Collaborating with team on scalable and user-focused solutions'
     ],
-    stack: ['React.js', 'Next.js', 'Node.js', 'MongoDB', 'PostgreSQL', 'JWT', 'Vercel', 'Twilio', 'Tailwind CSS', 'Express.js', 'REST APIs','SAS']
+    stack: ['React.js', 'Next.js', 'Node.js', 'MongoDB', 'PostgreSQL', 'JWT', 'Vercel', 'Twilio', 'Tailwind CSS', 'Express.js', 'REST APIs','SAS'],
+    letter: AitekExperienceLetter,
+    letterLabel: 'Experience Letter'
   },
   {
     company: 'Neplen (UAE)',
@@ -101,6 +105,24 @@ const Experience = () => {
                         <span key={techIndex} className="skill-badge">{tech}</span>
                       ))}
                     </div>
+
+                    {item.letter && (
+                      <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-outline-variant pt-5">
+                        <a
+                          href={item.letter}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex min-h-11 min-w-0 items-center gap-2.5 rounded-md border border-outline-variant px-4 py-2.5 font-mono text-[11px] font-bold uppercase tracking-widest text-on-surface transition hover:border-primary/50 hover:text-primary"
+                        >
+                          <FaFilePdf className="shrink-0 text-base text-primary" aria-hidden="true" />
+                          <span className="break-words">{item.letterLabel || 'Experience Letter'}</span>
+                        </a>
+                        <span className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-secondary">
+                          <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" aria-hidden="true" />
+                          Verified
+                        </span>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
