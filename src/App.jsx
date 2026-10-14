@@ -21,11 +21,9 @@ const App = () => {
     'home',
     'about',
     'skills',
-    'experience',
     'projects',
     'services',
     'certifications',
-    'contact',
   ]), []);
 
   // Keep the <html class="dark"> flag and localStorage in sync with state.

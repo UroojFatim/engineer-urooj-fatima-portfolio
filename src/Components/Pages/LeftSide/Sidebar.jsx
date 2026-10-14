@@ -4,10 +4,9 @@ import { SiUpwork } from 'react-icons/si';
 
 const navItems = [
   { idx: '01', label: 'Skills', to: 'skills' },
-  { idx: '02', label: 'Experience', to: 'experience' },
-  { idx: '03', label: 'Projects', to: 'projects' },
-  { idx: '04', label: 'Services', to: 'services' },
-  { idx: '05', label: 'Certifications', to: 'certifications' },
+  { idx: '02', label: 'Projects', to: 'projects' },
+  { idx: '03', label: 'Services', to: 'services' },
+  { idx: '04', label: 'Certifications', to: 'certifications' },
 ];
 
 // Native smooth-scroll — see matching note in Navbar.jsx.
