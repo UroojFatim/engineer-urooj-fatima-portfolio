@@ -131,16 +131,6 @@ const App = () => {
         </main>
       </div>
 
-      {activeSection !== 'home' && (
-        <a
-          href="mailto:urooj.fatim2004@gmail.com"
-          data-cursor-hover
-          className="fixed bottom-5 right-5 z-50 inline-flex min-h-11 min-w-11 items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-on-primary shadow-glow transition hover:brightness-110"
-        >
-          Hire Me
-        </a>
-      )}
-
       {showBackToTop && (
         <button
           type="button"

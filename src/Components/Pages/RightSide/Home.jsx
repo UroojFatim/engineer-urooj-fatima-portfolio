@@ -6,7 +6,6 @@ import Certifications from '../../Certifications';
 import Skills from '../../Skills';
 import Services from '../../Services';
 import Projects from '../../Projects';
-import Footer from '../../Footer';
 
 const Home = () => {
   return (
@@ -17,7 +16,6 @@ const Home = () => {
       <Projects />
       <Services />
       <Certifications />
-      <Footer />
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import ProfileImage from '../assets/ProfileImage.png';
-import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaDatabase, FaReact } from 'react-icons/fa';
-import { SiUpwork } from 'react-icons/si';
+import { FaCode, FaDatabase, FaReact } from 'react-icons/fa';
 import CV from '../assets/CV.pdf';
 import TerminalCard from './TerminalCard';
 import CornerMarks from './CornerMarks';
@@ -100,26 +99,6 @@ const Hero = () => {
                         >
                             View Projects
                         </button>
-                    </div>
-
-                    <div className="mt-10 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
-                        {[
-                            { href: 'https://github.com/UroojFatim', icon: FaGithub, label: 'GitHub' },
-                            { href: 'https://www.linkedin.com/in/urooj-fatima-588ba2296', icon: FaLinkedin, label: 'LinkedIn' },
-                            { href: 'https://www.upwork.com/freelancers/~018b2cb9ef43a154ba?mp_source=share', icon: SiUpwork, label: 'Upwork' },
-                            { href: 'mailto:urooj.fatim2004@gmail.com', icon: FaEnvelope, label: 'Email' },
-                        ].map(({ href, icon: Icon, label }) => (
-                            <a
-                                key={label}
-                                href={href}
-                                target={href.startsWith('mailto') ? undefined : '_blank'}
-                                rel={href.startsWith('mailto') ? undefined : 'noreferrer'}
-                                aria-label={label}
-                                className="flex min-h-11 min-w-11 items-center justify-center rounded-md border border-outline-variant text-lg text-on-surface-variant transition hover:border-primary/50 hover:text-primary"
-                            >
-                                <Icon />
-                            </a>
-                        ))}
                     </div>
 
                     <div className="mt-12 grid grid-cols-2 gap-2 sm:grid-cols-4">

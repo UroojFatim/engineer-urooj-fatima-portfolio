@@ -1,6 +1,5 @@
 import CV from "../../../assets/CV.pdf";
-import { FaGithub, FaLinkedin, FaEnvelope, FaSun, FaMoon, FaTimes } from 'react-icons/fa';
-import { SiUpwork } from 'react-icons/si';
+import { FaSun, FaMoon, FaTimes } from 'react-icons/fa';
 
 const navItems = [
   { idx: '01', label: 'Skills', to: 'skills' },
@@ -75,28 +74,7 @@ const Sidebar = ({ toggleTheme, isDarkMode, sidebarOpen, toggleSidebar, activeSe
           ))}
         </nav>
 
-        <div className="mt-8 flex items-center justify-center gap-3 text-lg">
-          <a href="https://github.com/UroojFatim" target="_blank" rel="noreferrer" aria-label="GitHub" className="flex min-h-11 min-w-11 items-center justify-center rounded-md border border-outline-variant text-on-surface-variant hover:border-primary/50 hover:text-primary">
-            <FaGithub />
-          </a>
-          <a href="https://www.linkedin.com/in/urooj-fatima-588ba2296" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="flex min-h-11 min-w-11 items-center justify-center rounded-md border border-outline-variant text-on-surface-variant hover:border-primary/50 hover:text-primary">
-            <FaLinkedin />
-          </a>
-          <a href="https://www.upwork.com/freelancers/~018b2cb9ef43a154ba?mp_source=share" target="_blank" rel="noreferrer" aria-label="Upwork" className="flex min-h-11 min-w-11 items-center justify-center rounded-md border border-outline-variant text-on-surface-variant hover:border-primary/50 hover:text-primary">
-            <SiUpwork />
-          </a>
-          <a href="mailto:urooj.fatim2004@gmail.com" aria-label="Email" className="flex min-h-11 min-w-11 items-center justify-center rounded-md border border-outline-variant text-on-surface-variant hover:border-primary/50 hover:text-primary">
-            <FaEnvelope />
-          </a>
-        </div>
-
         <div className="mt-8 space-y-3">
-          <a
-            href="mailto:urooj.fatim2004@gmail.com"
-            className="flex min-h-11 w-full items-center justify-center rounded-md bg-primary px-6 py-3 text-center text-sm font-bold text-on-primary transition hover:brightness-110"
-          >
-            Hire Me
-          </a>
           <a
             href={CV}
             target="_blank"
