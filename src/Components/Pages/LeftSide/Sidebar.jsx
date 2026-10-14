@@ -1,4 +1,3 @@
-import CV from "../../../assets/CV.pdf";
 import { FaSun, FaMoon, FaTimes } from 'react-icons/fa';
 
 const navItems = [
@@ -74,20 +73,6 @@ const Sidebar = ({ toggleTheme, isDarkMode, sidebarOpen, toggleSidebar, activeSe
           ))}
         </nav>
 
-        <div className="mt-8 space-y-3">
-          <a
-            href={CV}
-            target="_blank"
-            rel="noreferrer"
-            className="flex min-h-11 w-full items-center justify-center rounded-md border border-outline-variant px-6 py-3 text-center text-sm font-bold text-on-surface"
-          >
-            Download Resume
-          </a>
-        </div>
-
-        <p className="mt-8 text-center text-xs text-on-surface-variant">
-          urooj.fatim2004@gmail.com · +92 344 8302253
-        </p>
       </div>
     </>
   );

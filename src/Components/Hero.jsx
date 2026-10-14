@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
 import ProfileImage from '../assets/ProfileImage.png';
 import { FaCode, FaDatabase, FaReact } from 'react-icons/fa';
-import CV from '../assets/CV.pdf';
 import TerminalCard from './TerminalCard';
 import CornerMarks from './CornerMarks';
 import BrowserBar from './BrowserBar';
-import useMagnetic from '../hooks/useMagnetic';
 
 const Hero = () => {
     const roles = [
@@ -17,7 +15,6 @@ const Hero = () => {
     const [text, setText] = useState('');
     const [index, setIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const resumeRef = useMagnetic(10);
 
     useEffect(() => {
         let typingSpeed = isDeleting ? 40 : 120;
@@ -81,25 +78,6 @@ const Hero = () => {
                     <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-on-surface-variant sm:text-base lg:mx-0">
                         Full Stack Developer with 3+ years of production experience building scalable SaaS platforms, AI-driven applications, and e-commerce systems. Expertise in MERN stack, Next.js, TypeScript, Power Automate, and cloud-integrated architectures. Delivered 5+ live products serving 250+ active users across US and UAE clients.
                     </p>
-
-                    <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center lg:justify-start">
-                        <a
-                            ref={resumeRef}
-                            href={CV}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-6 py-3 font-bold text-on-primary shadow-glow transition hover:brightness-110"
-                        >
-                            Download Resume
-                        </a>
-                        <button
-                            type="button"
-                            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-                            className="min-h-11 w-full rounded-md border border-outline-variant px-6 py-3 font-bold text-on-surface transition hover:border-primary/50 hover:text-primary sm:w-auto"
-                        >
-                            View Projects
-                        </button>
-                    </div>
 
                     <div className="mt-12 grid grid-cols-2 gap-2 sm:grid-cols-4">
                         {stats.map((stat) => (

@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaSun, FaMoon, FaBars } from 'react-icons/fa';
-import CV from '../assets/CV.pdf';
 
 const navItems = [
   { idx: '01', label: 'Skills', to: 'skills' },
@@ -71,15 +70,6 @@ const Navbar = ({ toggleSidebar, activeSection, isScrolled, toggleTheme, isDarkM
           >
             {isDarkMode ? <FaSun /> : <FaMoon />}
           </button>
-
-          <a
-            href={CV}
-            target="_blank"
-            rel="noreferrer"
-            className="hidden min-h-11 items-center justify-center rounded-md border border-outline-variant px-5 text-sm font-semibold text-on-surface transition hover:border-primary/50 hover:text-primary sm:inline-flex"
-          >
-            Resume
-          </a>
 
           <button
             onClick={toggleSidebar}
